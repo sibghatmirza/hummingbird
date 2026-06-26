@@ -1,12 +1,13 @@
 [
   {
-    "slug": "lets-share",
-    "title": "Let's Share Rebranding",
+    "slug": "brand-identity-project",
+    "title": "Brand Identity Project",
     "category": "Branding",
-    "year": "2026",
+    "year": "2025",
     "accent": "blue",
-    "description": "Let's Share Rebranding",
-    "cover": "/uploads/1782502937242-LetsShareCover.png",
+    "featured": false,
+    "description": "A full identity for a small studio. Logo, colors, type, and a few rules so everything stays consistent.",
+    "cover": "/projects/placeholder-1.svg",
     "gallery": [
       "/projects/placeholder-1.svg",
       "/projects/placeholder-2.svg",
@@ -36,6 +37,7 @@
     "category": "Marketing Design",
     "year": "2025",
     "accent": "coral",
+    "featured": false,
     "description": "A set of social posts built around one simple idea. Made to scroll-stop, easy to roll out.",
     "cover": "/projects/placeholder-2.svg",
     "gallery": [
@@ -62,6 +64,7 @@
     "category": "Graphic Design",
     "year": "2024",
     "accent": "yellow",
+    "featured": false,
     "description": "A menu that's nice to read and nice to hold. Clean layout, warm colors, no clutter.",
     "cover": "/projects/placeholder-3.svg",
     "gallery": [
@@ -88,6 +91,7 @@
     "category": "Campaign Design",
     "year": "2024",
     "accent": "blue",
+    "featured": false,
     "description": "Posters, tickets, and signage for an event. One look across everything, big and small.",
     "cover": "/projects/placeholder-4.svg",
     "gallery": [

@@ -10,6 +10,8 @@ import { projects } from "@/data/projects";
 import { homeContent as c } from "@/lib/content";
 
 export default function HomePage() {
+  const featured = projects.filter((p) => p.featured);
+
   return (
     <div className="mx-auto max-w-content px-5">
       {/* Hero — just the quote */}
@@ -65,11 +67,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Work I'm proud of */}
-      <section className="py-12">
-        <SectionHeader title={c.workTitle} dot="coral" />
-        <ProjectGrid projects={projects} />
-      </section>
+      {/* Work I'm proud of — only projects toggled "featured" in the CMS */}
+      {featured.length > 0 && (
+        <section className="py-12">
+          <SectionHeader title={c.workTitle} dot="coral" />
+          <ProjectGrid projects={featured} />
+        </section>
+      )}
 
       {/* Why work with me */}
       <section className="py-12">

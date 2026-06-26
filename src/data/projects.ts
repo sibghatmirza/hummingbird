@@ -9,6 +9,8 @@ export type Project = {
   description: string;
   cover: string;
   gallery: string[];
+  /** Show this project on the homepage "Work I'm proud of" grid. */
+  featured?: boolean;
   credits?: string[];
   client?: string;
   tools?: string[];

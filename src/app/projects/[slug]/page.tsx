@@ -26,11 +26,8 @@ export default async function ProjectDetailPage({
   const project = getProject(slug);
   if (!project) notFound();
 
-  // Stacked images: cover first, then the rest (no dupes).
-  const images = [
-    project.cover,
-    ...project.gallery.filter((g) => g !== project.cover),
-  ];
+  // The cover is just the thumbnail; the detail page shows only the gallery.
+  const images = project.gallery;
 
   return (
     <div className="pb-20">

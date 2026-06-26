@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
-import ProjectGrid from "@/components/ProjectGrid";
+import ProjectsExplorer from "@/components/ProjectsExplorer";
 import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
 
       <FadeIn delay={0.1}>
         <div className="mt-12">
-          <ProjectGrid projects={projects} />
+          <ProjectsExplorer projects={projects} />
         </div>
       </FadeIn>
     </div>

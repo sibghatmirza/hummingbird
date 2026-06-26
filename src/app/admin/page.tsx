@@ -123,6 +123,58 @@ function ImageInput({
   );
 }
 
+function rowLabel(item: Record<string, Json>, index: number) {
+  const keys = ["title", "name", "q", "label", "heading"];
+  for (const k of keys) {
+    if (typeof item[k] === "string" && item[k]) return item[k] as string;
+  }
+  return `Item ${index + 1}`;
+}
+
+function RepeaterRow({
+  item,
+  index,
+  path,
+  onChange,
+  onRemove,
+}: {
+  item: Record<string, Json>;
+  index: number;
+  path: (string | number)[];
+  onChange: (path: (string | number)[], val: Json) => void;
+  onRemove: () => void;
+}) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="overflow-hidden rounded-lg border border-black/10 bg-black/[0.02]">
+      <div className="flex items-center justify-between gap-2 px-3 py-2.5">
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          className="flex min-w-0 flex-1 items-center gap-2 text-left"
+        >
+          <span className="text-black/40">{open ? "▾" : "▸"}</span>
+          <span className="truncate text-sm font-medium">
+            {rowLabel(item, index)}
+          </span>
+        </button>
+        <button
+          type="button"
+          onClick={onRemove}
+          className="rounded-md px-2 py-1 text-xs font-medium text-red-500 hover:bg-red-50"
+        >
+          Remove
+        </button>
+      </div>
+      {open && (
+        <div className="border-t border-black/10 p-4">
+          <ObjectFields obj={item} path={path} onChange={onChange} />
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Field({
   value,
   path,
@@ -225,34 +277,19 @@ function Field({
         </div>
       );
     }
-    // Array of objects → repeater
+    // Array of objects → collapsible repeater
     const arr = value as Record<string, Json>[];
     return (
-      <div className="space-y-3">
+      <div className="space-y-2">
         {arr.map((item, i) => (
-          <div
+          <RepeaterRow
             key={i}
-            className="rounded-lg border border-black/10 bg-black/[0.02] p-4"
-          >
-            <div className="mb-3 flex items-center justify-between">
-              <span className="text-xs font-semibold uppercase tracking-wide text-black/40">
-                Item {i + 1}
-              </span>
-              <button
-                onClick={() =>
-                  onChange(path, arr.filter((_, j) => j !== i))
-                }
-                className="rounded-md px-2 py-1 text-xs font-medium text-red-500 hover:bg-red-50"
-              >
-                Remove
-              </button>
-            </div>
-            <ObjectFields
-              obj={item}
-              path={[...path, i]}
-              onChange={onChange}
-            />
-          </div>
+            item={item}
+            index={i}
+            path={[...path, i]}
+            onChange={onChange}
+            onRemove={() => onChange(path, arr.filter((_, j) => j !== i))}
+          />
         ))}
         <button
           onClick={() =>

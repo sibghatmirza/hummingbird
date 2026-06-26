@@ -1,0 +1,8 @@
+[
+  { "name": "Brew & Co", "logo": "/clients/client-1.svg" },
+  { "name": "Studio Nine", "logo": "/clients/client-2.svg" },
+  { "name": "Marhaba", "logo": "/clients/client-3.svg" },
+  { "name": "Bloom", "logo": "/clients/client-4.svg" },
+  { "name": "Northwind", "logo": "/clients/client-5.svg" },
+  { "name": "Pixel Pantry", "logo": "/clients/client-6.svg" }
+]

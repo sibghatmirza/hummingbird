@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "quoteLead": "Jack of all trades.",
+    "quoteFull": "A jack of all trades is a master of none, but oftentimes better than a master of one.",
+    "subline": "That’s pretty much how I work.",
+    "tagline": "Design & marketing.",
+    "ctaLabel": "View my work →",
+    "ctaHref": "/projects"
+  },
+  "intro": {
+    "heading": "Hi. I’m Sib.",
+    "lead": "I design brands, graphics, campaigns, and whatever interesting challenge comes next.",
+    "statementPrefix": "I am",
+    "glowWord": "Hummingbird",
+    "statementRest": ". Not an agency. Just a curious designer who enjoys making things look good and make sense for the business."
+  },
+  "workTitle": "Work I’m proud of",
+  "whyTitle": "Why work with me?",
+  "why": [
+    {
+      "icon": "🗣️",
+      "title": "You talk to me.",
+      "body": "No sales rep, no account manager. Just me, from the first hello to the final file.",
+      "tint": "bg-coral/15"
+    },
+    {
+      "icon": "🎩",
+      "title": "I wear a few hats.",
+      "body": "Branding, design, a little marketing. One person who sees the whole picture.",
+      "tint": "bg-blue/15"
+    },
+    {
+      "icon": "🥹",
+      "title": "I actually care.",
+      "body": "Your project isn’t one of fifty. I want it to be good just as much as you do.",
+      "tint": "bg-coral/15"
+    },
+    {
+      "icon": "🤫",
+      "title": "Straight to the source.",
+      "body": "To be frank, a lot of the agencies you’d hire quietly pass this kind of work to people like me anyway. You can just skip the middle step.",
+      "tint": "bg-blue/15"
+    }
+  ],
+  "clientsTitle": "People I’ve made things for",
+  "testimonialsTitle": "Nice things people said",
+  "contactTitle": "Got something in mind?",
+  "contactCtaLabel": "Say Hello →"
+}

@@ -1,0 +1,9 @@
+{
+  "heading": "Let’s work together.",
+  "sub": "No forms. Just say hello.",
+  "photoPlaceholder": "your photo here",
+  "links": [
+    { "label": "Email", "value": "sibghat@hummingbird.om", "href": "mailto:sibghat@hummingbird.om", "accent": "bg-coral" },
+    { "label": "Instagram", "value": "hummingbird.om", "href": "https://instagram.com/hummingbird.om", "accent": "bg-blue" }
+  ]
+}

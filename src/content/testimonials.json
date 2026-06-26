@@ -1,0 +1,5 @@
+[
+  { "name": "Sara", "role": "Café owner", "image": "/testimonials/shot-1.svg", "accent": "coral" },
+  { "name": "Omar", "role": "Startup founder", "image": "/testimonials/shot-2.svg", "accent": "blue" },
+  { "name": "Lina", "role": "Event organizer", "image": "/testimonials/shot-3.svg", "accent": "yellow" }
+]

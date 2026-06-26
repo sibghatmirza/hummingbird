@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #202428;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Living brand mesh — soft colour blobs that drift slowly */
+body::after {
+  content: "";
+  position: fixed;
+  inset: -30%;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(40% 40% at 20% 22%, rgba(255, 87, 93, 0.45), transparent 70%),
+    radial-gradient(40% 40% at 82% 20%, rgba(255, 198, 90, 0.45), transparent 70%),
+    radial-gradient(40% 40% at 50% 85%, rgba(24, 187, 208, 0.45), transparent 70%);
+  filter: blur(60px) saturate(120%);
+  animation: drift 26s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(3%, -3%, 0) scale(1.12) rotate(8deg);
+  }
+}
+
+/* Fine grain noise overlay (above the mesh, below content) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.55;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+}
+
+/* Colored emphasis on important words */
+.glow-blue,
+.glow-coral,
+.glow-yellow {
+  font-weight: 700;
+}
+.glow-blue {
+  color: #0fa6bd;
+}
+.glow-coral {
+  color: #f4444b;
+}
+.glow-yellow {
+  color: #e9a93a;
+}
+
+/* Horizontal marquee for client logos */
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    animation: none;
+  }
+  .marquee-track {
+    animation: none;
+  }
+}
+
+/* Display font + tighter tracking on headings for some oomph */
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  letter-spacing: -0.03em;
+}
+
+::selection {
+  background: #18bbd0;
+  color: #fff;
+}

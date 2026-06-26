@@ -1,0 +1,10 @@
+{
+  "brand": "humming bird",
+  "nav": [
+    { "label": "Projects", "href": "/projects" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "footerLeft": "© Hummingbird. It’s just me, Sib.",
+  "footerRight": "Made with the guilt of not having my portfolio up sooner."
+}

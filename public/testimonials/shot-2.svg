@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="460" viewBox="0 0 600 460">
+  <rect width="600" height="460" rx="28" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="600" height="72" rx="28" fill="#FF575D" fill-opacity="0.14"/>
+  <circle cx="46" cy="36" r="18" fill="#FF575D"/>
+  <rect x="78" y="26" width="160" height="14" rx="7" fill="#202428" opacity="0.6"/>
+  <rect x="78" y="48" width="90" height="10" rx="5" fill="#202428" opacity="0.3"/>
+  <rect x="40" y="110" width="430" height="150" rx="22" fill="#F1EDE2"/>
+  <foreignObject x="64" y="128" width="384" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Open Sans',sans-serif;font-size:22px;line-height:1.4;color:#202428;">You took my messy idea and made it make sense. People keep asking who did it!</div>
+  </foreignObject>
+  <rect x="300" y="300" width="260" height="44" rx="22" fill="#FF575D" fill-opacity="0.9"/>
+  <foreignObject x="320" y="308" width="230" height="36">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Open Sans',sans-serif;font-size:20px;color:#fff;text-align:right;">Thank you! 🙌</div>
+  </foreignObject>
+</svg>

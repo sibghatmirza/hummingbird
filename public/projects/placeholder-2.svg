@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#FFF9ED"/>
+  <rect x="60" y="60" width="1080" height="780" rx="32" fill="#FF575D" fill-opacity="0.15"/>
+  <circle cx="600" cy="450" r="120" fill="#FF575D"/>
+  <text x="600" y="800" font-family="Inter, sans-serif" font-size="40" fill="#202428" text-anchor="middle" opacity="0.4">replace me, placeholder-2</text>
+</svg>

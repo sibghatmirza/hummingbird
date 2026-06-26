@@ -1,0 +1,48 @@
+{
+  "heading": "A little about me.",
+  "paragraphs": [
+    "I’m Sib, a graphic designer who likes making things look good and make sense.",
+    "I love food. I love traveling (love love love it). I care a lot about the people I work with, and I’m always trying to be a little better than I was the day before.",
+    "Hummingbird is where I keep my design work, branding projects, marketing bits, and the odd creative experiment."
+  ],
+  "loves": [
+    { "label": "Good food 🍜", "color": "bg-coral" },
+    { "label": "Traveling ✈️", "color": "bg-blue" },
+    { "label": "Good people 🤝", "color": "bg-yellow" },
+    { "label": "Getting 1% better", "color": "bg-coral" }
+  ],
+  "polaroids": [
+    { "src": "/sib.gif", "caption": "hello :)", "left": "2%", "top": "4%", "rotate": -8, "z": 20 },
+    { "src": "/instagram/ig-1.svg", "caption": "studio days", "left": "32%", "top": "0%", "rotate": 6, "z": 40 },
+    { "src": "/instagram/ig-2.svg", "caption": "on the road", "left": "58%", "top": "9%", "rotate": -5, "z": 30 },
+    { "src": "/instagram/ig-3.svg", "caption": "good coffee", "left": "14%", "top": "46%", "rotate": 7, "z": 35 },
+    { "src": "/instagram/ig-4.svg", "caption": "little wins", "left": "46%", "top": "52%", "rotate": -9, "z": 25 }
+  ],
+  "faqHeading": "Things people ask me.",
+  "faq": [
+    { "q": "What do you actually do?", "a": "I help businesses communicate better through design. Branding, packaging, retail campaigns, presentations, social media, and pretty much anything that helps a brand connect with people." },
+    { "q": "What do you enjoy working on the most?", "a": "Branding projects and full campaigns where I get the creative freedom to build something from the ground up." },
+    { "q": "How much experience do you have?", "a": "9+ years in Muscat, working with brands big and small." },
+    { "q": "What software do you use?", "a": "Mostly Illustrator. I also use Photoshop, After Effects, Blender, and I’m currently learning DaVinci Resolve." },
+    { "q": "Do you work alone?", "a": "Mostly, yes. When a project calls for skills beyond mine, I collaborate with trusted Arabic copywriters, photographers, videographers, and other specialists. We come together as one team for your project and focus on getting the best result." },
+    { "q": "Will you just do exactly what I ask?", "a": "I’ll always listen first, understand what you’re trying to achieve, and then recommend what I genuinely believe is the best solution. The strongest projects happen when your knowledge of the business meets my experience in design." },
+    { "q": "Are you serious about your work?", "a": "Very. I take my work seriously. I just wanted this website to feel simple, approachable, and a little fun." },
+    { "q": "Is this everything you’ve worked on?", "a": "Not even close. A lot of my work is covered by NDAs, so some of my favourite projects can’t be shared publicly." },
+    { "q": "What equipment and software do you use?", "a": "An Apple ecosystem I’m emotionally and financially committed to. Adobe is a love hate relationship I can’t quit. Everything else, from Envato and Canva to Midjourney, Runway, ElevenLabs, and whatever comes next, joins the workflow whenever it makes sense." },
+    { "q": "Will you make my logo bigger?", "a": "Only if it actually needs to be bigger. 🙂" }
+  ],
+  "howHeading": "How I work.",
+  "howSub": "A bit like the bird, honestly.",
+  "traits": [
+    { "title": "Tiny, but unforgettable.", "body": "Good work doesn’t need to be loud.", "accent": "coral" },
+    { "title": "Curious by nature.", "body": "I like learning new things instead of staying inside one box.", "accent": "blue" },
+    { "title": "Precise.", "body": "Every tiny detail matters.", "accent": "yellow" },
+    { "title": "Adaptable.", "body": "Every project is different, and I enjoy switching between branding, design, and marketing.", "accent": "coral" },
+    { "title": "Colorful.", "body": "Not because everything should be loud, but because good design should have personality.", "accent": "yellow" },
+    { "title": "Independent.", "body": "They don’t travel in flocks. Neither do I.", "accent": "blue" }
+  ],
+  "closing": [
+    "Hummingbird isn’t pretending to be something bigger.",
+    "It’s just me."
+  ]
+}

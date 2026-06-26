@@ -1,17 +1,33 @@
 [
   {
-    "slug": "brand-identity-project",
-    "title": "Brand Identity Project",
+    "slug": "lets-share",
+    "title": "Let's Share Rebranding",
     "category": "Branding",
-    "year": "2025",
+    "year": "2026",
     "accent": "blue",
-    "description": "A full identity for a small studio. Logo, colors, type, and a few rules so everything stays consistent.",
-    "cover": "/projects/placeholder-1.svg",
-    "gallery": ["/projects/placeholder-1.svg", "/projects/placeholder-2.svg", "/projects/placeholder-3.svg"],
-    "credits": ["Design: You", "Photography: A friend"],
+    "description": "Let's Share Rebranding",
+    "cover": "/uploads/1782502571144-lets_share.png",
+    "gallery": [
+      "/projects/placeholder-1.svg",
+      "/projects/placeholder-2.svg",
+      "/projects/placeholder-3.svg"
+    ],
+    "credits": [
+      "Design: You",
+      "Photography: A friend"
+    ],
     "client": "A small studio getting ready to launch. They had a name and a rough idea, but nothing that tied it all together yet.",
-    "tools": ["Illustrator", "Photoshop", "Figma"],
-    "tags": ["branding", "logo", "identity", "visual system"],
+    "tools": [
+      "Illustrator",
+      "Photoshop",
+      "Figma"
+    ],
+    "tags": [
+      "branding",
+      "logo",
+      "identity",
+      "visual system"
+    ],
     "published": "March 2025"
   },
   {
@@ -22,11 +38,22 @@
     "accent": "coral",
     "description": "A set of social posts built around one simple idea. Made to scroll-stop, easy to roll out.",
     "cover": "/projects/placeholder-2.svg",
-    "gallery": ["/projects/placeholder-2.svg", "/projects/placeholder-1.svg", "/projects/placeholder-4.svg"],
+    "gallery": [
+      "/projects/placeholder-2.svg",
+      "/projects/placeholder-1.svg",
+      "/projects/placeholder-4.svg"
+    ],
     "credits": [],
     "client": "A growing brand that wanted to show up better on social, without it feeling like every other feed out there.",
-    "tools": ["Photoshop", "After Effects"],
-    "tags": ["social media", "campaign", "marketing"],
+    "tools": [
+      "Photoshop",
+      "After Effects"
+    ],
+    "tags": [
+      "social media",
+      "campaign",
+      "marketing"
+    ],
     "published": "January 2025"
   },
   {
@@ -37,11 +64,22 @@
     "accent": "yellow",
     "description": "A menu that's nice to read and nice to hold. Clean layout, warm colors, no clutter.",
     "cover": "/projects/placeholder-3.svg",
-    "gallery": ["/projects/placeholder-3.svg", "/projects/placeholder-1.svg"],
+    "gallery": [
+      "/projects/placeholder-3.svg",
+      "/projects/placeholder-1.svg"
+    ],
     "credits": [],
     "client": "A neighbourhood spot with great food and a menu that didn’t do it justice. They wanted something warm and easy to read.",
-    "tools": ["Illustrator", "InDesign"],
-    "tags": ["print", "menu", "layout", "typography"],
+    "tools": [
+      "Illustrator",
+      "InDesign"
+    ],
+    "tags": [
+      "print",
+      "menu",
+      "layout",
+      "typography"
+    ],
     "published": "November 2024"
   },
   {
@@ -52,11 +90,26 @@
     "accent": "blue",
     "description": "Posters, tickets, and signage for an event. One look across everything, big and small.",
     "cover": "/projects/placeholder-4.svg",
-    "gallery": ["/projects/placeholder-4.svg", "/projects/placeholder-2.svg", "/projects/placeholder-3.svg"],
-    "credits": ["Design: You", "Print: Local press"],
+    "gallery": [
+      "/projects/placeholder-4.svg",
+      "/projects/placeholder-2.svg",
+      "/projects/placeholder-3.svg"
+    ],
+    "credits": [
+      "Design: You",
+      "Print: Local press"
+    ],
     "client": "An event that needed one consistent look across everything, from big posters down to the tickets in people’s hands.",
-    "tools": ["Illustrator", "Photoshop"],
-    "tags": ["event", "poster", "campaign", "signage"],
+    "tools": [
+      "Illustrator",
+      "Photoshop"
+    ],
+    "tags": [
+      "event",
+      "poster",
+      "campaign",
+      "signage"
+    ],
     "published": "August 2024"
   }
 ]

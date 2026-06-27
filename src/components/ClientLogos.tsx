@@ -3,13 +3,39 @@
 import Image from "next/image";
 import { clients } from "@/data/clients";
 
+function LogoCard({ name, logo }: { name: string; logo: string }) {
+  return (
+    <div className="flex shrink-0 items-center justify-center rounded-2xl border border-ink/10 bg-white px-8 py-5">
+      <Image
+        src={logo}
+        alt={name}
+        width={260}
+        height={110}
+        className="h-20 w-auto object-contain"
+      />
+    </div>
+  );
+}
+
 export default function ClientLogos() {
-  // Only show clients that actually have a logo uploaded.
   const withLogos = clients.filter((c) => c.logo);
   if (withLogos.length === 0) return null;
-  // Duplicated so the loop is seamless (track scrolls exactly one set width).
-  const row = [...withLogos, ...withLogos];
 
+  // Only loop/scroll once there are enough logos to fill the row.
+  const scroll = withLogos.length >= 5;
+
+  if (!scroll) {
+    return (
+      <div className="flex flex-wrap justify-center gap-5">
+        {withLogos.map((c) => (
+          <LogoCard key={c.name} name={c.name} logo={c.logo} />
+        ))}
+      </div>
+    );
+  }
+
+  // Duplicated so the marquee loop is seamless.
+  const row = [...withLogos, ...withLogos];
   return (
     <div
       className="group relative overflow-hidden"
@@ -20,20 +46,9 @@ export default function ClientLogos() {
           "linear-gradient(to right, transparent, black 6%, black 94%, transparent)",
       }}
     >
-      <div className="marquee-track flex w-max gap-4 group-hover:[animation-play-state:paused]">
+      <div className="marquee-track flex w-max gap-5 group-hover:[animation-play-state:paused]">
         {row.map((c, i) => (
-          <div
-            key={`${c.name}-${i}`}
-            className="flex w-48 shrink-0 items-center justify-center rounded-2xl border border-ink/10 bg-white px-4 py-3"
-          >
-            <Image
-              src={c.logo}
-              alt={c.name}
-              width={200}
-              height={80}
-              className="h-14 w-auto object-contain"
-            />
-          </div>
+          <LogoCard key={`${c.name}-${i}`} name={c.name} logo={c.logo} />
         ))}
       </div>
     </div>

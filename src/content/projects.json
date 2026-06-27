@@ -1,12 +1,12 @@
 [
   {
     "slug": "brand-identity-project",
-    "title": "Brand Identity Project",
+    "title": "Let's Share Rebrand",
     "category": "Branding",
-    "year": "2025",
+    "year": "2026",
     "accent": "blue",
     "featured": true,
-    "description": "A full identity for a small studio. Logo, colors, type, and a few rules so everything stays consistent.",
+    "description": "Here's a simpler, more natural version:\n\n**About the Project**\n\nLet's Share is a premium food brand in Muscat that creates sharing boxes for all kinds of gatherings. The goal of this rebrand was to improve the brand without changing what made it special. I kept the original idea and plated it out cohesively back tying the food with the gestures.",
     "cover": "/projects/placeholder-1.svg",
     "gallery": [
       "/projects/placeholder-1.svg",
@@ -14,21 +14,20 @@
       "/projects/placeholder-3.svg"
     ],
     "credits": [
-      "Design: You",
-      "Photography: A friend"
+      "Marwa for the ideation"
     ],
-    "client": "A small studio getting ready to launch. They had a name and a rough idea, but nothing that tied it all together yet.",
+    "client": "Let's Share founder, Marwa, reached out to me with hopes of taking her brand to the next level. Her cloud kitchen had already turned into a restaurant and now she was ready to invest in enhancing her overall brand outlook.",
     "tools": [
       "Illustrator",
       "Photoshop"
     ],
     "tags": [
       "branding",
-      "logo",
+      "strategy",
       "identity",
       "visual system"
     ],
-    "published": "March 2025"
+    "published": "2026"
   },
   {
     "slug": "social-campaign",

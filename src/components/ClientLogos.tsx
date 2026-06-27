@@ -24,14 +24,14 @@ export default function ClientLogos() {
         {row.map((c, i) => (
           <div
             key={`${c.name}-${i}`}
-            className="flex w-44 shrink-0 items-center justify-center rounded-2xl border border-ink/10 bg-white px-4 py-6 grayscale transition hover:grayscale-0"
+            className="flex w-48 shrink-0 items-center justify-center rounded-2xl border border-ink/10 bg-white px-4 py-3"
           >
             <Image
               src={c.logo}
               alt={c.name}
-              width={140}
-              height={50}
-              className="h-8 w-auto object-contain"
+              width={200}
+              height={80}
+              className="h-14 w-auto object-contain"
             />
           </div>
         ))}

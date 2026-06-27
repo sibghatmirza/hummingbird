@@ -5,7 +5,7 @@
     "category": "Branding",
     "year": "2025",
     "accent": "blue",
-    "featured": false,
+    "featured": true,
     "description": "A full identity for a small studio. Logo, colors, type, and a few rules so everything stays consistent.",
     "cover": "/projects/placeholder-1.svg",
     "gallery": [
@@ -20,8 +20,7 @@
     "client": "A small studio getting ready to launch. They had a name and a rough idea, but nothing that tied it all together yet.",
     "tools": [
       "Illustrator",
-      "Photoshop",
-      "Figma"
+      "Photoshop"
     ],
     "tags": [
       "branding",

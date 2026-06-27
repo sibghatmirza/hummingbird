@@ -7,4 +7,7 @@ export type Testimonial = {
   accent: "blue" | "coral" | "yellow";
 };
 
-export const testimonials = data as Testimonial[];
+export const testimonials = (data as unknown[]).filter(
+  (t): t is Testimonial =>
+    !!t && typeof t === "object" && typeof (t as Testimonial).name === "string"
+) as Testimonial[];

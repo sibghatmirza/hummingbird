@@ -20,6 +20,44 @@ const SECTIONS: { key: string; label: string }[] = [
 ];
 
 const IMAGE_KEY = /(cover|image|logo|src|photo|avatar|gallery)/i;
+
+// Arrays that are plain lists of text (not objects).
+const STRING_LIST_KEYS = new Set([
+  "gallery",
+  "tags",
+  "tools",
+  "credits",
+  "paragraphs",
+  "closing",
+]);
+
+// Shape templates so adding to an emptied list creates the right kind of item.
+const TEMPLATES: Record<string, Record<string, unknown>> = {
+  clients: { name: "", logo: "" },
+  testimonials: { name: "", role: "", image: "", accent: "blue" },
+  projects: {
+    slug: "",
+    title: "",
+    category: "",
+    year: "",
+    accent: "blue",
+    featured: false,
+    description: "",
+    cover: "",
+    gallery: [],
+    client: "",
+    tools: [],
+    tags: [],
+    published: "",
+  },
+  faq: { q: "", a: "" },
+  traits: { title: "", body: "", accent: "blue" },
+  loves: { label: "", color: "bg-coral" },
+  why: { icon: "", title: "", body: "", tint: "bg-coral/15" },
+  polaroids: { src: "", caption: "", left: "10%", top: "10%", rotate: 0, z: 10 },
+  nav: { label: "", href: "/" },
+  links: { label: "", value: "", href: "", accent: "bg-coral" },
+};
 const LONG_KEY =
   /(description|body|^a$|answer|paragraph|statement|client|sub|footer|tagline|caption|lead|full)/i;
 
@@ -236,8 +274,14 @@ function Field({
 
   // Array
   if (Array.isArray(value)) {
-    const allStrings = value.every((v) => typeof v === "string");
-    if (allStrings) {
+    // Decide list-of-text vs list-of-cards. For an empty array we can't tell
+    // from the data, so fall back to the known key (fixes the "emptied list
+    // turns into text" bug).
+    const isStringList =
+      value.length > 0
+        ? value.every((v) => typeof v === "string")
+        : STRING_LIST_KEYS.has(keyName) || !TEMPLATES[keyName];
+    if (isStringList) {
       const arr = value as string[];
       const isImg = IMAGE_KEY.test(keyName);
       return (
@@ -292,9 +336,12 @@ function Field({
           />
         ))}
         <button
-          onClick={() =>
-            onChange(path, [...arr, emptyLike(arr[0] ?? {}) as Json])
-          }
+          onClick={() => {
+            const template = arr[0]
+              ? emptyLike(arr[0])
+              : (TEMPLATES[keyName] ?? {});
+            onChange(path, [...arr, template as Json]);
+          }}
           className="rounded-md bg-black/5 px-3 py-1.5 text-sm font-medium hover:bg-black/10"
         >
           + Add item
@@ -435,7 +482,17 @@ export default function AdminPage() {
     setLoading(true);
     setStatus("");
     const res = await fetch(`/api/content?section=${s}`);
-    setData(await res.json());
+    let d = await res.json();
+    // Ensure projects always expose a "featured" toggle, even if older
+    // entries were saved before the field existed (without touching data).
+    if (s === "projects" && Array.isArray(d)) {
+      d = d.map((p) =>
+        p && typeof p === "object" && !("featured" in p)
+          ? { ...p, featured: false }
+          : p
+      );
+    }
+    setData(d);
     setLoading(false);
   }, []);
 

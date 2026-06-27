@@ -4,8 +4,11 @@ import Image from "next/image";
 import { clients } from "@/data/clients";
 
 export default function ClientLogos() {
+  // Only show clients that actually have a logo uploaded.
+  const withLogos = clients.filter((c) => c.logo);
+  if (withLogos.length === 0) return null;
   // Duplicated so the loop is seamless (track scrolls exactly one set width).
-  const row = [...clients, ...clients];
+  const row = [...withLogos, ...withLogos];
 
   return (
     <div

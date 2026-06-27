@@ -18,7 +18,11 @@ export type Project = {
   published?: string;
 };
 
-export const projects = data as Project[];
+// Tolerate malformed content so a bad CMS edit never breaks the build.
+export const projects = (data as unknown[]).filter(
+  (p): p is Project =>
+    !!p && typeof p === "object" && typeof (p as Project).slug === "string"
+) as Project[];
 
 export function getProject(slug: string) {
   return projects.find((p) => p.slug === slug);

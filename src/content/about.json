@@ -25,8 +25,8 @@
   ],
   "polaroids": [
     {
-      "src": "/sib.gif",
-      "caption": "hello :)",
+      "src": "/uploads/1782905658563-CD2C38D4-FC4F-4F2F-91FE-25656610B85A.JPG",
+      "caption": "seaturtle and me",
       "left": "2%",
       "top": "4%",
       "rotate": -8,
@@ -63,14 +63,6 @@
       "top": "52%",
       "rotate": -9,
       "z": 25
-    },
-    {
-      "src": "/uploads/1782905479274-CD2C38D4-FC4F-4F2F-91FE-25656610B85A.JPG",
-      "caption": "seaturtle and me",
-      "left": "46%",
-      "top": "52%",
-      "rotate": 0,
-      "z": 37
     }
   ],
   "faqHeading": "Things people ask me.",

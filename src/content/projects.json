@@ -58,5 +58,30 @@
       ""
     ],
     "published": "2025"
+  },
+  {
+    "slug": "",
+    "title": "Misto Packaging",
+    "category": "Packaging",
+    "year": "2026",
+    "accent": "",
+    "featured": true,
+    "description": "A playful packaging collection built around bold red and yellow colours, checkerboard accents, food illustrations and an expressive chef mascot. The design adapts across pizza boxes, food containers, sleeves and coffee cups, giving each format its own personality while keeping the range unmistakably Misto.",
+    "cover": "/uploads/1791276688333-ChefMisto-1_Page_09.jpg",
+    "gallery": [
+      "/uploads/1791276694443-ChefMisto-1_Page_02.jpg",
+      "/uploads/1791276699760-ChefMisto-1_Page_03.jpg",
+      "/uploads/1791276707549-ChefMisto-1_Page_04.jpg",
+      "/uploads/1791276712113-ChefMisto-1_Page_05.jpg",
+      "/uploads/1791276718505-ChefMisto-1_Page_06.jpg",
+      "/uploads/1791276724156-ChefMisto-1_Page_10.jpg",
+      "/uploads/1791276729429-ChefMisto-1_Page_11.jpg",
+      "/uploads/1791276737601-ChefMisto-1_Page_13.jpg"
+    ],
+    "credits": [],
+    "client": "Misto is an Italian restaurant at Oman Avenues Mall, serving pizza, pasta, coffee and a range of takeaway favourites. The packaging project focused on expressing the restaurant’s friendly character through a consistent, recognisable look across its menu.",
+    "tools": [],
+    "tags": [],
+    "published": ""
   }
 ]

@@ -124,5 +124,23 @@
     "tools": [],
     "tags": [],
     "published": "2026"
+  },
+  {
+    "slug": "taism",
+    "title": "TAISM Pre-K Viewbook",
+    "category": "Advertising",
+    "year": "2026",
+    "accent": "blue",
+    "featured": true,
+    "description": "A Pre-Kindergarten viewbook designed to introduce prospective families to TAISM’s approach to early learning. Combining vibrant school photography, clear typography and the school’s signature colours, the layout brings its curriculum, learning spaces and community to life in a welcoming, easy-to-navigate format.",
+    "cover": "",
+    "gallery": [],
+    "credits": [],
+    "client": "TAISM · The American International School of Muscat",
+    "tools": [
+      "Adobe Illustrator"
+    ],
+    "tags": [],
+    "published": "2026"
   }
 ]

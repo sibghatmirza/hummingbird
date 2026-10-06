@@ -83,5 +83,46 @@
     "tools": [],
     "tags": [],
     "published": "2026"
+  },
+  {
+    "slug": "burgergarage",
+    "title": "Burger Garage Ads",
+    "category": "Advertising",
+    "year": "2026",
+    "accent": "blue",
+    "featured": false,
+    "description": "Burger Garage is an established burger chain in Oman, known for its bold personality and indulgent comfort food.",
+    "cover": "/uploads/1791277475557-Burger_Garage_Oman_storefront_campaign-2.png",
+    "gallery": [
+      "/uploads/1791277478832-Burger_Garage_A5_flyer_mockup-1.png",
+      "/uploads/1791277487419-Burger_Garage_Oman_storefront_campaign-2.png"
+    ],
+    "credits": [],
+    "client": "The “Cravings Made Easy” campaign put Burger Garage’s signature burgers and value meal offer at the centre of the design. Rich red backgrounds, bold yellow typography and appetising food photography created a vibrant visual across printed flyers and storefront advertising, making the offer easy to spot and hard to resist.",
+    "tools": [
+      "Adobe Photoshop"
+    ],
+    "tags": [],
+    "published": "2026"
+  },
+  {
+    "slug": "gstl",
+    "title": "GSTL Company Profile",
+    "category": "Branding",
+    "year": "2026",
+    "accent": "blue",
+    "featured": false,
+    "description": "A company profile brochure designed to present GSTL’s expertise, product range, manufacturing partners and key projects. Clean layouts, industrial imagery and a green and white palette bring technical information together in a clear, professional format that reflects the company’s focus on quality and reliability.",
+    "cover": "/uploads/1791277590375-Gulf_Sealing_Valve_Brochure_Mockup-1.png",
+    "gallery": [
+      "",
+      "/uploads/1791277626857-Open_GSTL_brochure_product_spread-2.png",
+      "/uploads/1791277633196-Premium_brochure_featuring_Oman_projects_and_clients-3.png"
+    ],
+    "credits": [],
+    "client": "Gulf Sealing Technologies LLC (GSTL), a subsidiary of Seeh Al Sarya Engineering, supplies valves, piping and engineered solutions to Oman’s oil, gas and petrochemical sectors.",
+    "tools": [],
+    "tags": [],
+    "published": "2026"
   }
 ]
